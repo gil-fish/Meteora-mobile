@@ -1,0 +1,126 @@
+    .cabecalho {
+        position: relative;
+        padding: 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--preto);
+    }
+    
+    .cabecalho__menu-hamburguer {
+        width: 1.25rem;
+        height: 0.95rem;
+        margin-left: 12.75rem;
+        padding: 5px;
+        border: none;
+        font-weight: bold;
+    }
+    
+    .lista-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 70%;
+    }
+    
+    .container__botao,
+    .site-busca,
+    .botao__busca,
+    .opcoes {
+        display: none;
+    }
+    
+    .container__botao:checked~.lista-menu {
+        display: block;
+    }
+    
+    .lista-menu__item {
+        padding: 0.4em;
+        background-color: var(--cinza);
+    }
+    
+    .lista-menu__link {
+        color: var(--branco);
+        text-decoration: none;
+    }
+    
+    .pesquisa {
+        background-color: var(--branco);
+        text-align: center;
+        padding: 1.5em;
+    }
+    
+    .site-search {
+        width: 18em;
+        padding: 10px 12px 10px 12px;
+        border-style: solid;
+        border-color: var(--preto);
+        border-width: 1px;
+    }
+    
+    .botao__pesquisa {
+        background-color: var(--branco);
+        font-family: var(--fonte-principal);
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px 12px 8px 12px;
+        border-color: var(--preto);
+        border-style: solid;
+        border-width: 1px;
+        color: var(--preto);
+    }
+    
+    @media (min-width: 768px) {
+        .cabecalho {
+            justify-content: flex-start;
+            gap: 2rem;
+        }
+        .container,
+        .opcoes,
+        .site-busca {
+            display: flex;
+            position: relative;
+            align-items: center;
+        }
+        span,
+        .pesquisa {
+            display: none;
+        }
+        .opcoes {
+            gap: 1.5rem;
+            font-weight: 400;
+            font-size: 13px;
+        }
+        .opcoes-menu__item {
+            color: var(--branco);
+            text-decoration: none;
+        }
+        .opcoes-menu__item:hover {
+            color: var(--verde-claro);
+            font-weight: bold;
+        }
+        .busca {
+            margin-left: 5rem;
+            flex: 1;
+        }
+        .site-busca {
+            width: 10em;
+            padding: 10px 12px;
+            border-style: solid;
+            border-color: var(--preto);
+            border-width: 1px;
+        }
+        .botao__busca {
+            display: flex;
+            background-color: var(--preto);
+            font-family: var(--fonte-principal);
+            color: var(--branco);
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 10px;
+            border-color: var(--branco);
+            border-style: solid;
+            border-width: 1px;
+            cursor: pointer;
+        }
+    }

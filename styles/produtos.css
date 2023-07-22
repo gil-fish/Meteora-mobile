@@ -1,0 +1,47 @@
+.produtos__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    margin: .5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.produtos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.produtos__item img {
+    width: 83%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.produtos__item h3,
+h5 {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 2rem;
+}
+
+.produtos__item h4 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.produtos__item button {
+    outline: none;
+    border: none;
+    background-color: var(--lilas);
+    color: var(--branco);
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    font-size: 16px;
+    text-align: center;
+    padding: .5em 1em;
+    width: 120spx;
+    cursor: pointer;
+    transition: .5s;
+}

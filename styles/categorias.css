@@ -1,0 +1,32 @@
+.categorias__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.categorias__lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.categorias__item img {
+    align-content: center;
+    width: 100%;
+    /* Make the image fit inside the grid item without distorting its aspect ratio */
+    overflow: hidden;
+    /* Ensure the grid item does not stretch the image */
+}
+
+.categorias__item p {
+    text-align: center;
+    padding: .75em;
+    background-color: var(--preto);
+    color: var(--branco);
+}

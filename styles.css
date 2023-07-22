@@ -1,0 +1,35 @@
+@import url("./styles/header.css");
+@import url("./styles/carrossel.css");
+@import url("./styles/categorias.css");
+@import url("./styles/produtos.css");
+@import url("./styles/facilidades.css");
+@import url("./styles/contato.css");
+:root {
+    --branco: #FFF;
+    --preto: #000;
+    --cinza: #343A40;
+    --lilas: #AB25CC;
+    --verde-claro: #DAFF01;
+    --fonte-principal: "Inter";
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer {
+    background-color: var(--preto);
+}
+
+.rodape h4 {
+    font-family: var(--fonte-principal);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--branco);
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 1.5rem;
+}

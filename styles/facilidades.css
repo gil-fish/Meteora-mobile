@@ -1,0 +1,39 @@
+    .facilidades {
+        background-color: var(--preto);
+    }
+    
+    .facilidades__titulo {
+        color: var(--branco);
+        font-family: var(--fonte-principal);
+        font-weight: 500;
+        font-size: 24px;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .facilidades__lista {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .facilidades__item img {
+        float: left;
+        margin-right: 2rem;
+    }
+    
+    .facilidades__item h3 {
+        color: var(--verde-claro);
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    
+    .facilidades__item h4 {
+        color: var(--branco);
+        font-size: 13px;
+        font-weight: 400;
+        white-space: normal;
+    }
